@@ -4,7 +4,7 @@ This repo provides the methods of deploying and verifying the round21events ERC1
 
 Try running some of the following tasks:
 
-```shell
+```
 yarn
 npx hardhat compile
 node scripts/deploy.js
