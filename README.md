@@ -1,15 +1,15 @@
-# Basic Sample Hardhat Project
+# Round 21 Events
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This repo provides the methods of deploying and verifying the round21events ERC1155 drop.
+*You will need to create a `.env` in the root to configure your API endpoint, private key that has MATIC, and https://polygonscan.com api key*
+
 
 Try running some of the following tasks:
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+`yarn` to install all the dependencies
+
+`npx hardhat compile` to compile the contracts
+
+`node scripts/deploy.js` to deploy the contracts
+
+`npx hardhat verify --network <NETWORK> <DEPLOYED_CONTRACT_ADDRESS> "0x207Fa8Df3a17D96Ca7EA4f2893fcdCb78a304101"` to verify on polygonscan
