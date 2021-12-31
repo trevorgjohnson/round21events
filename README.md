@@ -1,15 +1,12 @@
-# Basic Sample Hardhat Project
+# Round 21 Events
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This repo provides the methods of deploying and verifying the round21events ERC1155 drop.
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat accounts
+yarn
 npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+node scripts/deploy.js
+npx hardhat verify --network <NETWORK> <DEPLOYED_CONTRACT_ADDRESS> "0x207Fa8Df3a17D96Ca7EA4f2893fcdCb78a304101"
 ```
